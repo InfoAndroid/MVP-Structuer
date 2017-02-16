@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import com.example.admin.mvpdemo.MainActivity;
 import com.example.admin.mvpdemo.R;
+import com.example.admin.mvpdemo.home.HomeActivity;
 
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToHome() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, HomeActivity.class));
         finish();
     }
 
